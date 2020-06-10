@@ -1,6 +1,14 @@
 # AndroidHttpServerDemo
 
 AndroidHttpServerDemo is an app to demonstrate that Android device can be an HTTP server.
+Fork from “https://github.com/chooyan-eng/AndroidHttpServerDemo.git”.
+
+# Update note
+	1.Change HTTP listener from Activity to Service.
+	2.Due to service introduction, Android Oreo and later versions have been modified to notify.
+	3.Modified to start as a service when the Android device starts.
+	4.compileSdkVersion and targetSdkVersion changed from 26 to 29.
+	5.Compatible with Android Studio 4.0.
 
 # How to run
 
@@ -11,11 +19,12 @@ Note that the HTTP server in the Android device can be accessed via local networ
 * clone this repository
 
 ```
-$ git clone https://github.com/chooyan-eng/AndroidHttpServerDemo
+$ git clone git@github.com:YabukiMunehisa/AndroidHttpServerDemo.git
 ```
 
-* open the project with AndroidStudio
-* simply run the project, and HTTP server will run right after running the app
+* open the project with AndroidStudio 4.0 or later
+* Just run the project and the HTTP server will run immediately after running the app. Alternatively, restart your device after installing the APK.
+* However, please start the application once before restarting after installation.
 
 ## Connect to the HTTP server
 
@@ -39,3 +48,8 @@ Bug reports or pull requests to make the app better are welcome. This project is
 # License
 
 The project is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
+
+# Special thanks
+Chooyan
+and
+People who provided various information on the Web
